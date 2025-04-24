@@ -1,5 +1,7 @@
-<h1>Cambiando el readme</h1>
+<h1>Informacion</h1>
 
-- Cambios desde Cambios-1.0
+- Ejercicio clase 03.
+- Link de la noticia: https://www.clarin.com/loterias-y-quinielas/quiniela-cordoba-resultado-sorteo-primera-manana-hoy-jueves-10-abril_0_8jBo449ArZ.html#google_vignette
+- 🌐 Pages: 
 
-Materia Desarrollo y Arquitectura Web
+`Materia Desarrollo y Arquitectura Web`

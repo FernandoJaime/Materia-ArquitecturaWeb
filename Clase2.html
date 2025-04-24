@@ -24,6 +24,64 @@
         <h2>¿Cuántos sorteos hay por día?</h2>
         <p>La Lotería de la Provincia de Córdoba realiza cuatro concursos de Quiniela de lunes a sábados (La Primera de la Mañana, Matutina, Vespertina y Nocturna).</p>
         <p><b>Aclaración:</b> Clarín no se responsabiliza por los errores u omisiones que pudieran existir en esta información. La única lista oficial válida es la proporcionada por la Lotería de Córdoba de Buenos Aires.</p>
+
+        <!-- Formulario -->
+        <section>
+            <h2>Formulario de registro a la Quiniela 🎰</h2>
+            <form action="https://httpbin.org/post" method="post" target="_blank">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                
+                    <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required>
+                    <label for="apellido">Apellido:</label> <input type="text" id="apellido" name="apellido" required><br><br>
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label> <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+                    <label for="dni">DNI:</label> <input type="text" id="dni" name="dni" required><br><br>
+
+                    <label for="pais">Nacionalidad:</label>
+                    <select name="pais" id="pais" required>
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="chile">Chile</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="peru">Perú</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="chile">Chile</option>
+                    </select><br><br>
+                    <label for="direccion">Dirección:</label> <input type="text" id="direccion" name="direccion" required>
+                    <label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+                    <fieldset>
+                        <legend>Sexo:</legend>
+
+                        <input type="radio" id="masculino" name="sexo" value="masculino" required> <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="sexo" value="femenino" required> <label for="femenino">Femenino</label>
+                        <input type="radio" id="otro" name="sexo" value="otro" required> <label for="otro">Otro</label>
+                    </fieldset>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de contacto:</legend>
+
+                    <label for="email">Correo electrónico:</label> <input type="email" id="email" name="email" required><br><br>
+                    <label for="telefono">Teléfono:</label> <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+
+                <div>
+                    <label>Dejanos un comentario:</label><br>
+                    <textarea name="comentario" id="comentario"></textarea>
+                </div>
+
+                <div>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
     </body>
         
 </body>

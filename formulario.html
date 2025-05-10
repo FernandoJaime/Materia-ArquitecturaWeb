@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro 🎰</title>
+    <link rel="stylesheet" href="style_formulario.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario -->
+        <section class="form-container">
+            <h2 class="form-title">Formulario de registro a la Quiniela 🎰</h2>
+            <form action="https://httpbin.org/post" method="post" target="_blank" class="registration-form">
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">Datos personales</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pais">Nacionalidad:</label>
+                        <select name="pais" id="pais" required>
+                            <option value="" disabled selected>Selecciona tu país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="chile">Chile</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="peru">Perú</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="chile">Chile</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+                    </div>
+
+                    <fieldset class="radio-fieldset">
+                        <legend class="fieldset-legend">Sexo:</legend>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="femenino" name="sexo" value="femenino" required>
+                                <label for="femenino">Femenino</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="otro" name="sexo" value="otro" required>
+                                <label for="otro">Otro</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">Datos de contacto:</legend>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="comentario">Dejanos un comentario:</label>
+                    <textarea name="comentario" id="comentario" rows="4"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="submit-button">Registrarse</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

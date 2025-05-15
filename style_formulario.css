@@ -182,7 +182,7 @@ textarea {
     min-height: 100px;
 }
   
-/* Estilos responsivos */
+/* Estilos responsivos generales */
 @media (max-width: 768px) {
     .form-row {
       flex-direction: column;

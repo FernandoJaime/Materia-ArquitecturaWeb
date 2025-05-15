@@ -84,7 +84,7 @@ a.link {
     font-weight: bold;
 }
   
-/* Estilos responsivos */
+/* Estilos responsivos generales */
 @media (max-width: 768px) {
     .content {
       padding: 0 15px;

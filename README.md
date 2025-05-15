@@ -1,7 +1,16 @@
 <h1>Informacion</h1>
 
-- `Ejercicio clase 04.`
-- `Link de la noticia:` https://www.clarin.com/loterias-y-quinielas/quiniela-cordoba-resultado-sorteo-primera-manana-hoy-jueves-10-abril_0_8jBo449ArZ.html#google_vignette
-- `🌐 Pages:` https://fernandojaime.github.io/Materia-ArquitecturaWeb/
+`🎮 Ejercicio clase 05 - Tema aplicacion de responsive`
 
-`Materia Desarrollo y Arquitectura Web`
+`📚 Materia Desarrollo y Arquitectura Web`
+
+<h2>Links</h2>
+
+[📰 Noticia](https://www.clarin.com/loterias-y-quinielas/quiniela-cordoba-resultado-sorteo-primera-manana-hoy-jueves-10-abril_0_8jBo449ArZ.html#google_vignette)
+
+[🌐 Pages](https://fernandojaime.github.io/Materia-ArquitecturaWeb/)
+
+
+<h4>Autor</h4>
+
+`🧑‍💻 Fernando Jaime`

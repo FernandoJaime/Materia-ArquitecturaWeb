@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+  
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+  
+.menu-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+  
+.register-button {
+    background-color: transparent;
+    color: rgb(48, 47, 47);
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(48, 47, 47);
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.svg-definitions {
+    display: none;
+}
+  
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+  
+/* Textos en negrita */
+b, strong {
+    font-weight: bold;
+}
+  
+/* Centrar la imagen */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+  
+/* Texto abajo de imagen */
+.image-caption {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+  
+/* Enlaces */
+a.link {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+  
+/* Estilos responsivos generales */
+@media (max-width: 768px) {
+    .content {
+      padding: 0 15px;
+    }
+  
+    header {
+      padding: 10px 15px;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+  

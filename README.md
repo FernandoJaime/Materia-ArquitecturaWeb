@@ -1,6 +1,6 @@
 <h1>Informacion</h1>
 
-`🎮 Ejercicio clase 05 - Tema aplicacion de responsive`
+`🎮 Ejercicio clase 06 - Tema aplicacion de flexbox`
 
 `📚 Materia Desarrollo y Arquitectura Web`
 

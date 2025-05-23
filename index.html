@@ -4,35 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 2</title>
+    <title> | Loterías y Quinielas</title>
     <link rel="stylesheet" href="style_index.css">
+    <link rel="shortcut icon" href="assets/icono_clarin.ico">
 </head>
 
 <body>
     <header>
-        <!-- Contenedor para menú y logo -->
         <div class="menu-logo-container">
-            
-            <button class="menu-button" aria-label="Menú">
+
+            <button class="menu-button" aria-label="Menú" width="50" height="50">
                 ☰
             </button>
-    
-            <a href="https://www.clarin.com/loterias-y-quinielas/quiniela-cordoba-resultado-sorteo-primera-manana-hoy-jueves-10-abril_0_8jBo449ArZ.html#google_vignette" class="logo-link" target="_blank">
-                <svg fill="#d80026" width="100" height="25">
-                    <use xlink:href="#logoClarin"></use>
-                </svg>
-            </a>
+
+            <div class="logo-text-container">
+                <a href="https://www.clarin.com/loterias-y-quinielas/..." class="logo-link" target="_blank">
+                    <svg fill="#d80026" width="150" height="50">
+                        <use xlink:href="#logoClarin"></use>
+                    </svg>
+                </a>
+                <span class="logo-separador">|</span>
+                <strong class="logo-titulo">Loterías y Quinielas</strong>
+            </div>
         </div>
-    
+
+        </div>
+
         <!-- Botón de registro que lleva a formulario -->
         <button class="register-button" onclick="window.open('formulario.html', '_blank')">
-            Registrate 🎰
+            Suscribite 🎰
         </button>
-    
+
         <!-- Definición del símbolo del logo -->
-        <svg class="svg-definitions">
-            <symbol version="1.1" id="logoClarin" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 86.289 19.314" enable-background="new 0 0 86.289 19.314">
+        <svg class="svg-definicion">
+            <symbol version="1.1" id="logoClarin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.289 19.314"
+                enable-background="new 0 0 86.289 19.314">
                 <g id="Capa_2">
                     <g id="Capa_1-2">
                         <path
@@ -47,32 +53,96 @@
         </svg>
     </header>
 
-    <main class="content">
-        <h1>Conocé los números ganadores, cuáles salieron hoy a la cabeza y todo lo que necesitás saber.</h1>
+    <div class="container">
+        <main class="content">
+            <h1>Conocé los números ganadores, cuáles salieron hoy a la cabeza y todo lo que necesitás saber.</h1>
 
-        <div class="image-container">
-            <img src="https://www.clarin.com/img/2020/09/07/JijTxgoxv_360x240__1.jpg" alt="Imagen de la noticia" width="500" height="300">
-            <span class="image-caption">Conocé el resultado del sorteo de la Quiniela de Córdoba.</span>
+            <div class="image-container">
+                <img src="https://www.clarin.com/img/2020/09/07/JijTxgoxv_360x240__1.jpg" alt="Imagen de la noticia"
+                    width="500" height="300">
+                <span class="image-caption">Conocé el resultado del sorteo de la Quiniela de Córdoba.</span>
+            </div>
+        </main>
+
+        <div class="text-aside">
+            <div class="text-content">
+                <p>En pocos minutos más vas a poder conocer en este mismo link los números ganadores del sorteo de la
+                    Primera de la Mañana de este jueves 10 de abril de la Quiniela de Córdoba, así como las letras y los
+                    restantes 19 números que completan los 20 puestos.</p>
+                <p><a href="https://www.clarin.com/loterias-y-quinielas" class="link">La Quiniela</a> es el juego de
+                    azar más popular de la Argentina y la de Córdoba es organizada por la Lotería de dicha provincia
+                    argentina</p>
+
+                <h2>¿Cómo se juega a la Quiniela?</h2>
+                <p>El juego de la Quiniela consiste en apostar una cierta cantidad de dinero a números de 1 cifra, 2
+                    cifras, 3 cifras o 4 cifras.</p>
+
+                <h2>¿Cuántos sorteos hay por día?</h2>
+                <p>La Lotería de la Provincia de Córdoba realiza cuatro concursos de Quiniela de lunes a sábados (La
+                    Primera de la Mañana, Matutina, Vespertina y Nocturna).</p>
+                <p><b>Aclaración:</b> Clarín no se responsabiliza por los errores u omisiones que pudieran existir en
+                    esta información. La única lista oficial válida es la proporcionada por la Lotería de Córdoba de
+                    Buenos Aires.</p>
+            </div>
+            <aside class="sidebar">
+                <h3>Últimas noticias</h3>
+                <ul class="news-list">
+                    <li>
+                        <a
+                            href="https://www.clarin.com/informacion-general/pueblito-argentino-celebra-25-mayo-8000-kilos-carne-participar-jornada-patriotica_0_GESbPiTMkc.html">
+                            <img src="https://www.clarin.com/img/2025/04/23/oMGKVUloN_300x168__1.jpg"
+                                alt="Pueblito celebra el 25 de mayo">
+                            <h4>
+                                <span>Jornada patriótica</span>
+                                Pueblito argentino celebra el 25 de mayo con 8.000 kilos de carne: Cómo participar?
+                            </h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.clarin.com/internacional/conmocion-fisiculturismo-murio-nikita-tkachuk-hulk-ruso-35-anos_0_PZr5KUZvHv.html">
+                            <img src="https://www.clarin.com/img/2025/05/22/x_9oPHRK3_300x168__1.jpg"
+                                alt="Murió el Hulk ruso">
+                            <h4>
+                                <span>Conmoción en el fisiculturismo</span>
+                                Murió Nikita Tkachuk, el "Hulk ruso", a los 35 años
+                            </h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.clarin.com/opinion/secretos-plan-colchon-dudas-fmi-deseo-oculto-cristina_0_0N2OUzdQqh.html">
+                            <img src="https://www.clarin.com/img/2025/05/13/fAnj56b-__300x168__1.jpg"
+                                alt="Plan colchón">
+                            <h4>
+                                <span>Panorama económico</span>
+                                Los secretos del Plan Colchón, las dudas del FMI y el deseo oculto de Cristina
+                            </h4>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
         </div>
+    </div>
 
-        <p>En pocos minutos más vas a poder conocer en este mismo link los números ganadores del sorteo de la Primera de
-            la Mañana de este jueves 10 de abril de la Quiniela de Córdoba, así como las letras y los restantes 19
-            números que completan los 20 puestos.</p>
-        <p><a href="https://www.clarin.com/loterias-y-quinielas" class="link">La Quiniela</a> es el juego de
-            azar más popular de la Argentina y la de Córdoba es organizada por la Lotería de dicha provincia argentina
-        </p>
 
-        <h2>¿Cómo se juega a la Quiniela?</h2>
-        <p>El juego de la Quiniela consiste en apostar una cierta cantidad de dinero a números de 1 cifra, 2 cifras, 3
-            cifras o 4 cifras.</p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="https://www.clarin.com/loterias-y-quinielas/quiniela-cordoba-resultado-sorteo-primera-manana-hoy-jueves-10-abril_0_8jBo449ArZ.html#google_vignette"
+                    class="logo-link" target="_blank">
+                    <svg fill="#d80026" width="150" height="50">
+                        <use xlink:href="#logoClarin"></use>
+                    </svg>
+                </a>
+            </div>
 
-        <h2>¿Cuántos sorteos hay por día?</h2>
-        <p>La Lotería de la Provincia de Córdoba realiza cuatro concursos de Quiniela de lunes a sábados (La Primera de
-            la Mañana, Matutina, Vespertina y Nocturna).</p>
-        <p><b>Aclaración:</b> Clarín no se responsabiliza por los errores u omisiones que pudieran existir en esta
-            información. La única lista oficial válida es la proporcionada por la Lotería de Córdoba de Buenos Aires.
-        </p>
-    </main>
+            <div class="footer-info">
+                <p>© 2025 Clarín ® Todos los derechos reservados</p>
+                <p>Juan Domingo Perón 8101, Buenos Aires · int. 525</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

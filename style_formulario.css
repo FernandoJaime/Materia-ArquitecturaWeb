@@ -62,7 +62,6 @@ body {
 }
 
 .fieldset-legend {
-    font-weight: bold;
     padding: 0 10px;
     color: var(--secondary-color);
 }

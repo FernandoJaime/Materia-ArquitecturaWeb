@@ -1,6 +1,6 @@
 <h1>Informacion</h1>
 
-`🎮 Ejercicio clase 06 - Tema aplicacion de flexbox`
+`🎮 Ejercicio TP Flexbox`
 
 `📚 Materia Desarrollo y Arquitectura Web`
 

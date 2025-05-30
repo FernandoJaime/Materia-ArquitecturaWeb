@@ -4,6 +4,8 @@ body {
     font-weight: lighter;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,9 +26,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
     border-bottom: 1px solid rgb(173, 13, 13);
     background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+    padding: 10px;
 }
   
 .menu-logo-container {
@@ -87,8 +90,10 @@ header {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
 }
 
 .content {
@@ -101,7 +106,16 @@ header {
     text-align: center;
     margin: 20px 0;
 }
-  
+
+#imagen_size {
+    max-width: 700px;
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .image-caption {
     display: block;
     font-size: 0.85rem;
@@ -188,6 +202,8 @@ header {
   padding: 30px 40px;
   border-top: 2px solid rgb(173, 13, 13);
   margin-top: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -210,7 +226,37 @@ header {
 }
 
 /* Resposives */
-@media (max-width: 480px) {
+@media (max-width: 440px) {
+  .logo-link{
+    width: 130px;
+    height: 50px;
+  }
+
+  .menu-button{
+    width: 30px;
+    height: 50px;
+  }
+
+  .logo-titulo {
+    font-size: 15px;
+  }
+
+  .logo-separador {
+    font-size: 15px;
+  }
+
+  .register-button {
+    padding: 3px 6px;
+    font-size: 13px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 440px){
+  .container{
+    padding: 0px;
+  }
+  
   .logo-titulo {
     font-size: 18px;
   }
@@ -228,9 +274,29 @@ header {
   .news-list img {
     width: 80px;
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
+  header {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  .menu-logo-container {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .register-button {
+    margin-right: 0;
+  }
+
   .text-aside {
     flex-direction: column;
     padding: 0 10px;
@@ -258,9 +324,10 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  
   .text-aside {
     gap: 30px;
-    padding: 0 15px;
+    padding: 0 1vh;
   }
 
   .sidebar {

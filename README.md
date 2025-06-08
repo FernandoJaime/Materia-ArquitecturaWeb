@@ -1,6 +1,6 @@
 <h1>Informacion</h1>
 
-`🎮 Ejercicio TP Flexbox`
+`🎮 Ejercicio clase 08 - Ejercicios sobre` <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
 
 `📚 Materia Desarrollo y Arquitectura Web`
 

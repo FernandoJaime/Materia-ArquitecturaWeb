@@ -1,6 +1,6 @@
 <h1>Informacion</h1>
 
-`🎮 Ejercicio TP Flexbox`
+`🎮 Ejercicio clase 09 - Validaciones del formulario`
 
 `📚 Materia Desarrollo y Arquitectura Web`
 

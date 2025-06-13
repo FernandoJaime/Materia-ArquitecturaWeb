@@ -180,7 +180,19 @@ textarea {
     resize: vertical;
     min-height: 100px;
 }
-  
+
+/* Estilos para mensajes de error */
+input.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+small.error-text {
+    color:rgb(255, 53, 53);
+    display: none;
+    font-size: 0.9rem;
+}
+
 /* Estilos responsivos generales */
 @media (max-width: 768px) {
     .form-row {

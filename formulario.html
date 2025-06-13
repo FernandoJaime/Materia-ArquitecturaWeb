@@ -6,6 +6,7 @@
     <title>Suscripcion</title>
     <link rel="stylesheet" href="style_formulario.css">
     <link rel="shortcut icon" href="assets/icono_clarin.ico">
+    
 </head>
 <body>
     <div class="container">
@@ -19,21 +20,25 @@
                         <div class="form-group">
                             <label for="nombre">Nombre:</label>
                             <input type="text" id="nombre" name="nombre" required>
+                            <small id="error-nombre" class="error-text"></small>
                         </div>
                         <div class="form-group">
                             <label for="apellido">Apellido:</label>
                             <input type="text" id="apellido" name="apellido" required>
+                            <small id="error-apellido" class="error-text"></small>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <small id="error-fecha" class="error-text"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="dni">DNI:</label>
                         <input type="text" id="dni" name="dni" required>
+                        <small id="error-dni" class="error-text"></small>
                     </div>
 
                     <div class="form-group">
@@ -58,10 +63,12 @@
                         <div class="form-group">
                             <label for="direccion">Dirección:</label>
                             <input type="text" id="direccion" name="direccion" required>
+                            <small id="error-direccion" class="error-text"></small>
                         </div>
                         <div class="form-group">
                             <label for="ciudad">Ciudad:</label>
                             <input type="text" id="ciudad" name="ciudad" required>
+                            <small id="error-ciudad" class="error-text"></small>
                         </div>
                     </div>
 
@@ -90,11 +97,13 @@
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required>
+                        <small id="error-email" class="error-text"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" required>
+                        <small id="error-tel" class="error-text"></small>
                     </div>
                 </fieldset>
 
@@ -112,5 +121,7 @@
             </form>
         </section>
     </div>
+
+    <script src="/js/script_formulario.js"></script>
 </body>
 </html>

@@ -225,3 +225,94 @@ function mostrarAlerta(mensaje) {
         alerta.remove();
     }, 4000); 
 }
+
+// Configuracion del envio del formulario
+
+// Si hay datos guardados en localStorage, los cargo al iniciar la página
+window.onload = function () {
+    const savedData = JSON.parse(localStorage.getItem('formData'));
+    if (savedData) {
+        for (const key in savedData) {
+            const field = document.querySelector(`[name="${key}"]`);
+            if (field) {
+                if (field.type === "radio" || field.type === "checkbox") {
+                    if (field.value === savedData[key]) field.checked = true;
+                } else {
+                    field.value = savedData[key];
+                }
+            }
+        }
+    }
+};
+
+// Post del formulario al hacer submit
+    // Devuelve un mensaje de éxito o error si se envia correctamente obtenemos un id de respuesta y lo todos los datos en localStorage
+document.querySelector('.registration-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = {};
+
+    for (const [key, value] of formData.entries()) {
+        data[key] = value;
+    }
+
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Error en la solicitud');
+        return response.json();
+    })
+    .then(result => {
+        localStorage.setItem('formData', JSON.stringify(data));
+        showModal("✅ ¡Formulario enviado con éxito!", "success", data);
+    })
+    .catch(error => {
+        console.error(error);
+        showModal("❌ Error al enviar el formulario. Inténtalo más tarde.", "error");
+    });
+});
+
+// Funcion para mostrar el modal de exito o error segun el resultado del envio
+function showModal(message, type = "success", data = null) {
+    const modal = document.getElementById('modal');
+    const modalContent = modal.querySelector('.modal-content');
+    const modalMessage = document.getElementById('modal-message');
+
+    // Limpiamos clases previas por las dudas
+    modalContent.classList.remove('modal-success', 'modal-error');
+
+    // Aplicamos clases según el tipo de mensaje
+    if (type === 'success') {
+        modalContent.classList.add('modal-success');
+    } else {
+        modalContent.classList.add('modal-error');
+    }
+
+    // Mensaje principal de como salio el post  
+    let finalMessage = `<p>${message}</p>`;
+
+    // En caso de que salga bien, muestro los datos enviados y guardados en localStorage
+    if (type === 'success' && data) {
+    finalMessage += `<hr><p>Datos enviados:</p><ul style="text-align:left; padding-left: 1rem;">`;
+    for (const [key, value] of Object.entries(data)) {
+        if (key === "terminos") continue; // omitimos el campo "terminos"
+        finalMessage += `<li><strong>${key}:</strong> ${value}</li>`;
+    }
+        finalMessage += `</ul>`;
+    }
+
+    modalMessage.innerHTML = finalMessage;
+    modal.classList.remove('hidden');
+}
+
+// Cierro el modal
+document.querySelector('.modal-close').addEventListener('click', function () {
+    document.getElementById('modal').classList.add('hidden');
+}); 

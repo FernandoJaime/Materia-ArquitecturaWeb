@@ -1,6 +1,6 @@
 <h1>Informacion</h1>
 
-`🎮 Ejercicio clase 09 - Validaciones del formulario`
+`🎮 Ejercicio clase 10 - Envio de formulario y manejo de localStorage`
 
 `📚 Materia Desarrollo y Arquitectura Web`
 
